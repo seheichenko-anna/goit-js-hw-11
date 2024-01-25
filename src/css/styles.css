@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 36px;
+  margin: 0 auto;
 }
 
 .form {
@@ -84,20 +85,20 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+
 }
 
 .gallery-item {
-  width: calc((100% - 100px) / 5);
   transition: transform 0.3s;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow: hidden;
 }
 
-
 .gallery-item img {
   object-fit: cover;
   height: 300px;
+  width: 400px;
 }
 
 .gallery-item .gallery-link:hover {
@@ -114,12 +115,17 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 8px 0;
 }
 
 .image-desc-item {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.image-desc-item>p:first-child {
+  font-weight: 600;
 }
 
 .loader.hidden {
